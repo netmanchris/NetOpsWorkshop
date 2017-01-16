@@ -11,6 +11,10 @@ This directory contains several Vagrantfile variants. Choose one of them and cop
 * *Vagrantfile-Ansible* - single VM topology ready to use with Cisco VIRL or with any external lab
 * *Vagrantfile-SRX* - Ansible VM + SRX VM. You can use this topology together with Cisco VIRL to create a lab with Junos and Cisco IOS/NXOS/IOS-XR devices.
 
+*note* For Vagrantfile-SRX on windows, you may need to install the following vagrant plugins using the following commands at the cli
+*    **vagrant plugin install vagrant-host-shell**
+*    **vagrant plugin install vagrant-junos**
+
 ## Create the Ubuntu VM (Ansible host)
 From the main repository directory execute *vagrant up* optionally specifying the VM name (for example *vagrant up nms*). You might have to specify the virtualization software you're using with the --provider flag. See vagrant documentation for more details.
 
